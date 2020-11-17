@@ -1,0 +1,13 @@
+{
+  "HEADER": {
+    "TITLE": "Bonjour i18n"
+  },
+  "MESSAGE": {
+    "IN_HTML": "message en HTML!"
+  },
+  "TIME": {
+    "ONE_MINUTE": "Mis à jour il y a une minute",
+    "MINUTES_AGO": "Mis à jour il y a {{minute}} minutes",
+    "JUST_NOW": "Mis à jour à l'instant"
+  }
+}

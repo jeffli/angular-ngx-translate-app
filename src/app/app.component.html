@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container">
+    <span class="form-inline">
+      <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language }}
+        </option>
+      </select>
+    </span>
+  </div>
+</nav>
+
+
+<h1>
+    {{'HEADER.TITLE' | translate }}
+</h1>
+
+<div translate='MESSAGE.IN_HTML'> </div>
+
+<br /> <br />
+
+ <div>{{message}}</div>
+
+<br />
+
+<button (click)="inc(1)">+</button> <button (click)="inc(-1)">-</button>
+
+<span  >{{when | translate}}.</span>({{minutes}})
+
+<br /> <br />
+
+<span  >{{when | translate}}!</span>({{minutes}})
